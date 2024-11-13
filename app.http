@@ -1,0 +1,48 @@
+GET http://localhost:5000/todos
+###
+
+DELETE http://localhost:5000/todos/b220e2ec-b5af-4fce-ae39-ea64a82573ff
+Content-Type:application/json
+###
+
+POST http://localhost:5000/todos
+Content-Type:application/json
+
+{"name":"aaaaa","status":"pendi"}
+
+###
+POST http://localhost:5000/register
+Content-Type:application/json
+
+{
+"name": "ramesh",
+"password":"sdfgghdrhd"
+}
+###
+PUT http://localhost:5000/todos/profile
+Content-Type:application/json
+
+{
+    "name":"ramesh",
+    "changename": "ravi"
+}
+###
+PUT http://localhost:5000/todos/profile
+Content-Type:application/json
+
+{
+    "name":"ravi",
+    "newpassword": "ravi"
+}
+###
+PUT http://localhost:5000/todos/7958b5f7-b9f1-43c0-8402-e21db902f1f0
+Content-Type:application/json
+
+{"status":"pending"}
+
+####
+POST http://localhost:5000/login
+Content-Type:application/json
+
+{"name":"badri",
+"password":"badri"}
